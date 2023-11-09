@@ -45,6 +45,9 @@ a {
 nav .nav-right-section a{
     color: black;
     margin-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 nav .nav-right-section .menu{
@@ -52,30 +55,33 @@ nav .nav-right-section .menu{
     background-size: contain;
     width: 30%;
     background-repeat: no-repeat;
+    padding-right: 50px;
 }
 
 nav .nav-right-section .perfil{
-    width: 35%;
+    width: 50%;
+    height: 100%;
     border-radius: 100%;
-    margin-left: 10%;
+    margin-left: 50px;
 }
 
 main{
-    margin-top: 25%;
+    margin-top: 5%;
     text-align: center;
 }
 
 main .main-logo{
-    width: 90%;
+    width: 40%;
     margin: 0 auto;
 }
 
 main .main-logo img{
-    width: 50%;
+    width: 60%;
 }
 
 main .main-input{
-    width: 70%;
+    width: 40%;
+    height: 90%;
     margin: 0 auto;
 }
 
@@ -89,25 +95,83 @@ main .main-input input{
     height: 30px;
     border: none;
     outline: none;
-    width: 90%;
+    width: 80%;
 }
 
-main .main-input .search-icon{
+main .main-input .search-icon {
     background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    padding-left: 7px;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+    padding-left: 6%;
+    margin-left: 2%;
 }
 
-main .main-input .miro-icon{
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+
+main .main-input .cam-icon {
+    background-image: url(https://condominiosrioviejo.cl/wp-content/uploads/2023/03/que-es-google-lens-es-gratis.png);
     background-size: contain;
     background-repeat: no-repeat;
-    padding-right: 10px;
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
+    padding-right: 7%;
+    margin-left: 5%;
+}
+
+main .buttons{
+    text-align: center;
+    padding-top: 20px;
+    margin: auto;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .buttons .button {
+    background-color: #f8f9fa;
+    border:  transparent;
+    border-radius: 5px;
+    height: 35px;
+    width: 45%;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    /* width - ancho /// height-alto */
+    width: 100%;
+    height: 15%;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    color: grey;
+    text-align: center;
+}
+
+footer .top .mex{
+    padding: 15px 30px;
+    border-bottom: 1px solid #a2a5a8;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .bottom{
+    padding: 15px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .bottom .left .bottom .rigth{
+    text-emphasis-color: grey;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    list-style: none;
+}
+
+footer .bottom a{
+    margin-right: 20px;
+    color: grey;
 }
